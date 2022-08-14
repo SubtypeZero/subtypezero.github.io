@@ -1,0 +1,34 @@
+title: SubtypeZero.dev
+description: A personal software development site
+url: "https://subtypezero.dev"
+
+# Uncomment the following and set a tracking ID to enable Google Analytics
+# google_analytics: [Google Analytics tracking ID]
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji
+
+exclude:
+  - README.md
